@@ -365,11 +365,12 @@ p.weather--temp {
 }
 
 img.close--todo {
-    margin: -4px 2px 0 0;
+    margin: 4px 10px 0 0;
+    cursor: pointer;
 }
 
-img.close--todo {
-    cursor: pointer;
+img#close--todo {
+    margin: -4px 2px 0 0;
 }
 
 .close--links {
@@ -377,6 +378,10 @@ img.close--todo {
     margin-right: 5px;
     margin-left: 2px;
     cursor: pointer;
+}
+
+#close--links {
+    margin-top: -5px;
 }
 
 .links--links {
