@@ -9,12 +9,13 @@ const linksBtn = document.getElementById("links--submit")
 const linksList = document.getElementById("links--list--items")
 
 function addLink(txt) {
+    txt.replace("https://", "").replace("http://", "").replace("www.")
     const liNode = document.createElement("div")
     const liImg = document.createElement("img")
     let li = document.createElement("li")
     liImg.src = "images/closetodobutton.svg"
     liImg.style.width = "20px"
-    li.innerHTML = `<a href="https://${txt}" target="_blank">${txt}</a>`
+    li.innerHTML = `<a href="${txt}" target="_blank">${txt}</a>`
     linksList.insertBefore(li, linksList.childNodes[0])
     liImg.classList.add("close--links")
     liNode.classList.add("close--all--links")
